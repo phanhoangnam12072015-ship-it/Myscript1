@@ -33,7 +33,7 @@ local Window = MakeWindow({
 -- MINIMIZE BUTTON
 -------------------------------------------------
 MinimizeButton({
-    Image = "https://drive.google.com/uc?export=view&id=U5GcdHg4744uPEMpi",
+    Image = "https://cdn.discordapp.com/attachments/1418169288434651250/1455439803469402281/image0.jpg",
     Size = {60, 60},
     Color = Color3.fromRGB(10, 10, 10),
     Corner = true,
