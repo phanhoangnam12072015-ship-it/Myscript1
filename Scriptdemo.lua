@@ -47,7 +47,7 @@ MinimizeButton({
 local Tab1o = MakeTab({ Name = "Script Forsaken" })
 local Tab2o = MakeTab({ Name = "Script War Tycoon" })
 local Tab3o = MakeTab({ Name = "Script TSB" })
-local Tab4o = MakeTab({ Name = "Script blue block" })
+local Tab4o = MakeTab({ Name = "Script blue block" })local Tab5o = MakeTab({ Name = "Script dead rail" })
 -------------------------------------------------
 -- BUTTON 1
 -------------------------------------------------
@@ -118,6 +118,18 @@ AddButton(Tab4o, {
         print("Exuso hub button clicked")
 
         local SCRIPT_URL = "https://raw.githubusercontent.com/BexruzScripts/Blue-lock-no-cd-reo-get-any-style-script.-WORKS-WITH-WORLD-CLASSES-/refs/heads/main/script.lua"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+-------------------------------------------------
+-- BUTTON 7
+-------------------------------------------------
+AddButton(Tab5o, {
+    Name = "farm bond",
+    Callback = function()
+        print("farm bond button clicked")
+
+        local SCRIPT_URL = "https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
 })
