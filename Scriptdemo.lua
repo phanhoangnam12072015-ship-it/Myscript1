@@ -45,9 +45,12 @@ MinimizeButton({
 -- TABS
 -------------------------------------------------
 local Tab1o = MakeTab({ Name = "Script Forsaken" })
-local Tab2o = MakeTab({ Name = "Script War Tycoon" })
-local Tab3o = MakeTab({ Name = "Script TSB" })
-local Tab4o = MakeTab({ Name = "Script blue block" })local Tab5o = MakeTab({ Name = "Script dead rail" })
+local Tab2o = MakeTab({ Name = "Script war tycoon" })
+local Tab3o = MakeTab({ Name = "Script tsb" })
+local Tab4o = MakeTab({ Name = "Script blue block" })
+ Tab5o = MakeTab({ Name = "Script dead rail" })
+local Tab6o = MakeTab({ Name = "Script sever vip" })
+local Tab7o = MakeTab({ Name = "Script blox fruit" })
 -------------------------------------------------
 -- BUTTON 1
 -------------------------------------------------
@@ -125,11 +128,31 @@ AddButton(Tab4o, {
 -- BUTTON 7
 -------------------------------------------------
 AddButton(Tab5o, {
-    Name = "farm bond",
+    Name = "skull hub",
     Callback = function()
-        print("farm bond button clicked")
+        print("skull hub button clicked")
 
-        local SCRIPT_URL = "https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"
+        local SCRIPT_URL = "https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+AddButton(Tab6o, {
+    Name = "sever vip free",
+    Callback = function()
+        print("sever vip free button clicked")
+
+        local SCRIPT_URL = "https://raw.githubusercontent.com/anuragaming1/Meow_gaming/refs/heads/main/Servervip.lua."
+"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+AddButton(Tab7o, {
+    Name = "QuantumOnyx",
+    Callback = function()
+        print("QuantumOnyx button clicked")
+
+        local SCRIPT_URL ="https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"
+"
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
 })
