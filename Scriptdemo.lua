@@ -136,6 +136,9 @@ AddButton(Tab5o, {
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
 })
+-------------------------------------------------
+-- BUTTON 8
+-------------------------------------------------    
 AddButton(Tab6o, {
     Name = "sever vip free",
     Callback = function()
@@ -146,6 +149,9 @@ AddButton(Tab6o, {
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
 })
+-------------------------------------------------
+-- BUTTON 9
+-------------------------------------------------
 AddButton(Tab7o, {
     Name = "QuantumOnyx",
     Callback = function()
