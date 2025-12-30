@@ -2,7 +2,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
 
 -------------------------------------------------
--- WINDOW + KEY SYSTEM (save key after first input)
+-- WINDOW + KEY SYSTEM (key nhập 1 lần)
 -------------------------------------------------
 local Window = MakeWindow({
     Hub = {
@@ -13,7 +13,6 @@ local Window = MakeWindow({
         KeySystem = true,
         Title = "Key System",
         Description = "Enter your key to continue",
-        KeyLink = "",
         Keys = {"muhehehe","key123","banbe1","vip2025"},
         Notifi = {
             Notifications = true,
@@ -21,10 +20,10 @@ local Window = MakeWindow({
             Incorrectkey = "Wrong key!",
             CopyKeyLink = ""
         },
-        SaveKey = true -- ✅ save key after first input
+        SaveKey = true -- ✅ save key automatically
     },
     ConfigurationSaving = {
-        Enabled = true,           -- ✅ enable saving config/key
+        Enabled = true,           -- ✅ enable saving key/config
         FolderName = "SubinHub",
         FileName = "KeyConfig"
     }
@@ -40,91 +39,68 @@ local Tab4o = MakeTab({ Name = "Script Blue Block" })
 local Tab5o = MakeTab({ Name = "Script Dead Rail" })
 local Tab6o = MakeTab({ Name = "Script Server VIP" })
 local Tab7o = MakeTab({ Name = "Script Blox Fruit" })
-
+local Tab8o = MakeTab({ Name = "Script steal a brainrot" })
 -------------------------------------------------
 -- BUTTONS
 -------------------------------------------------
 -- Tab1
-AddButton(Tab1o, {
-    Name = "Sigmaken",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/sigmaboy-sigma-boy/Sigmasaken/refs/heads/main/sigmasakenmain"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
+AddButton(Tab1o, { Name = "Sigmaken", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/sigmaboy-sigma-boy/Sigmasaken/refs/heads/main/sigmasakenmain"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 
-AddButton(Tab1o, {
-    Name = "Nullsaken",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/34f3f/forsaken.github.io/refs/heads/main/ringtabublik.lua"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
+AddButton(Tab1o, { Name = "Nullsaken", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/34f3f/forsaken.github.io/refs/heads/main/ringtabublik.lua"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 
 -- Tab2
-AddButton(Tab2o, {
-    Name = "AWT (with key)",
-    Callback = function()
-        local SCRIPT_URL = "https://pastebin.com/raw/gf22x6st"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
+AddButton(Tab2o, { Name = "AWT (with key)", Callback = function()
+    local SCRIPT_URL = "https://pastebin.com/raw/gf22x6st"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 
-AddButton(Tab2o, {
-    Name = "FacilityHub",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/FacilityHUB/FacilityHub/refs/heads/main/WarTycoons"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
+AddButton(Tab2o, { Name = "FacilityHub", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/FacilityHUB/FacilityHub/refs/heads/main/WarTycoons"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 
 -- Tab3
-AddButton(Tab3o, {
-    Name = "Vexonhub",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
+AddButton(Tab3o, { Name = "Vexonhub", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 
 -- Tab4
-AddButton(Tab4o, {
-    Name = "Exuso hub",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/BexruzScripts/Blue-lock-no-cd-reo-get-any-style-script.-WORKS-WITH-WORLD-CLASSES-/refs/heads/main/script.lua"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end,
-    Image = "https://cdn.discordapp.com/attachments/1418169288434651250/1455439803469402281/image0.jpg",
-    Size = {60, 60}
-})
+AddButton(Tab4o, { Name = "Exuso hub", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/BexruzScripts/Blue-lock-no-cd-reo-get-any-style-script.-WORKS-WITH-WORLD-CLASSES-/refs/heads/main/script.lua"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end,
+Image = "https://cdn.discordapp.com/attachments/1418169288434651250/1455439803469402281/image0.jpg",
+Size = {60, 60}})
 
 -- Tab5
-AddButton(Tab5o, {
-    Name = "Skull hub",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
+AddButton(Tab5o, { Name = "Skull hub", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 
 -- Tab6
-AddButton(Tab6o, {
-    Name = "Server VIP Free",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/anuragaming1/Meow_gaming/refs/heads/main/Servervip.lua"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
+AddButton(Tab6o, { Name = "Server VIP Free", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/anuragaming1/Meow_gaming/refs/heads/main/Servervip.lua"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 
 -- Tab7
-AddButton(Tab7o, {
-    Name = "QuantumOnyx",
-    Callback = function()
-        local SCRIPT_URL = "https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"
-        loadstring(game:HttpGet(SCRIPT_URL))()
-    end
-})
-
+AddButton(Tab7o, { Name = "QuantumOnyx", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
+-- Tab7
+AddButton(Tab8o, { Name = "spawn brainrot", Callback = function()
+    local SCRIPT_URL = "https://raw.githubusercontent.com/khelzzz/x/refs/heads/main/Sab-Spawner"
+    loadstring(game:HttpGet(SCRIPT_URL))()
+end})
 -------------------------------------------------
 -- MINIMIZE BUTTON
 -------------------------------------------------
